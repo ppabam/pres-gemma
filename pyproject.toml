@@ -1,11 +1,11 @@
 [project]
 name = "pres-gemma"
-version = "0.1.0"
+version = "0.2.0"
 description = "Default template for PDM package"
 authors = [
     {name = "ppabam", email = "tom@diginori.com"},
 ]
-dependencies = []
+dependencies = ["transformers>=4.52.4", "datasets>=3.6.0", "bitsandbytes>=0.46.0", "peft>=0.15.2", "trl>=0.18.2", "accelerate>=1.8.0"]
 requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
@@ -21,4 +21,6 @@ distribution = true
 [dependency-groups]
 note = [
     "jupyterlab>=4.4.3",
+    "ipywidgets>=8.1.7",
+    "protobuf>=6.31.1",
 ]
